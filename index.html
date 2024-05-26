@@ -19,28 +19,39 @@
             </div>
         </div>
         <div class="signUp-form">
-            <h1>Create an Account</h1>
+            <h1 class="signInHead">Create an Account</h1>
             <div class="colDiv">
-                <label for="name">Full Name</label>
+                <label id="nameLabel" for="name">Full Name</label>
                 <input id="name" type="text" name="name" placeholder="Enter your name">
                 <label for="email">Email</label>
                 <input id="email" type="email" name="email" placeholder="Enter your email">
                 <label for="password">Password</label>
                 <input id="password" type="password" name="password" placeholder="Enter your password">
                 <img class="hideIcon" src="https://i.ibb.co/2gBN7yX/Hide.png" alt="not available" height="18" width="18">
-                <label for="phone">Phone Number</label>
+                <input id="img" type="file">
+                <label id="phoneLabel" for="phone">Phone Number</label>
                 <input id="phone" type="tel" name="phone" placeholder="Enter your contact">
             </div>
             <div class="lineHeight">
-                <button class="sign-btn">Sign Up</button>
+                <button class="sign-btn" onclick="signedIn()">Sign Up</button>
                 <p>OR</p>
                 <button class="g-btn">
-                    <img id="gicon" src="https://i.ibb.co/r6HtpZW/gicon-removebg-preview.png" alt="not available" height="18">
                     Sign Up with google
                 </button>
-                <p>Already have an Account? <span class="spanTag">Login</span></p>
+                <p>Already have an Account? <span class="spanTag" onclick="loginBtn()">Login</span></p>
             </div>
         </div>
     </div>
+
+    <div class="parentCardDiv">
+        <div class="cardDiv">
+            <img id="cardImg" src="" alt="not available">
+            <h1 id="nameVal"></h1>
+            <p id="emailVal"></p>
+            <p id="numberVal"></p>
+        </div>
+    </div>
+
+    <script src="./scripts.js"></script>
 </body>
 </html>
